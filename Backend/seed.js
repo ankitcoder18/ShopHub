@@ -1093,21 +1093,21 @@ const seedDatabase = async () => {
         // Create users (passwords will be hashed by User model's pre-save hook)
         const superAdmin = await User.create({
             name: 'ShopHub Super Admin',
-            email: 'superadmin@genz-mart.in',
+            email: 'superadmin@shophub.in',
             password: 'Hemraj@2002#',
             role: 'superadmin'
         });
 
         const mainAdmin = await User.create({
             name: 'ShopHub Admin',
-            email: 'admin@genz-mart.in',
+            email: 'admin@shophub.in',
             password: 'Hemraj@2002#',
             role: 'admin'
         });
 
         const seller = await User.create({
             name: 'ShopHub Seller',
-            email: 'seller@genz-mart.in',
+            email: 'seller@shophub.in',
             password: 'Hemraj@2002#',
             role: 'seller',
             sellerInfo: {
@@ -1126,9 +1126,9 @@ const seedDatabase = async () => {
             avatar: 'https://via.placeholder.com/150'
         });
 
-        console.log('👤 Super Admin created (superadmin@genz-mart.in)');
-        console.log('👤 Admin user created (admin@genz-mart.in)');
-        console.log('👤 Seller user created (seller@genz-mart.in)');
+        console.log('👤 Super Admin created (superadmin@shophub.in)');
+        console.log('👤 Admin user created (admin@shophub.in)');
+        console.log('👤 Seller user created (seller@shophub.in)');
         console.log('👤 Sample user created');
 
         // Insert products
@@ -1137,9 +1137,9 @@ const seedDatabase = async () => {
 
         console.log('\n✨ Database seeded successfully!');
         console.log('\n📝 Login Credentials:');
-        console.log(`Super Admin - Email: superadmin@genz-mart.in, Password: Hemraj@2002#`);
-        console.log(`Admin       - Email: admin@genz-mart.in, Password: Hemraj@2002#`);
-        console.log(`Seller      - Email: seller@genz-mart.in, Password: Hemraj@2002#`);
+        console.log(`Super Admin - Email: superadmin@shophub.in, Password: Hemraj@2002#`);
+        console.log(`Admin       - Email: admin@shophub.in, Password: Hemraj@2002#`);
+        console.log(`Seller      - Email: seller@shophub.in, Password: Hemraj@2002#`);
         console.log(`User        - Email: user@example.com, Password: user123`);
         console.log(`\n📊 Total Products: ${products.length}`);
         console.log(`📂 Categories: Electronics, Fashion, Home & Kitchen, Books, Sports, Beauty, Mobile, Computers, Toys, Grocery`);

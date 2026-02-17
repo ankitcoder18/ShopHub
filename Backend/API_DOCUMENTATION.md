@@ -1,6 +1,6 @@
 # ShopHub API Documentation
 
-**Base URL:** `http://localhost:5000/api` (Development) or `https://apisgenzmart.vercel.app/api` (Production)
+**Base URL:** `http://localhost:5000/api` (Development) or `https://apisshophub.vercel.app/api` (Production)
 
 **Authentication:** Most endpoints require JWT token in Authorization header:
 ```

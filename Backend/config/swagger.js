@@ -7,8 +7,8 @@ const swaggerSpec = {
         description: 'Complete API documentation for ShopHub e-commerce platform',
         contact: {
             name: 'ShopHub Support',
-            email: 'support@genz-mart.in',
-            url: 'https://genzmarts.vercel.app'
+            email: 'support@shophub.in',
+            url: 'https://shophub.vercel.app'
         },
         license: {
             name: 'ISC'
@@ -20,7 +20,7 @@ const swaggerSpec = {
             description: 'Development Server'
         },
         {
-            url: 'https://apisgenzmart.vercel.app/api',
+            url: 'https://apisshophub.vercel.app/api',
             description: 'Production Server'
         }
     ],
