@@ -1092,26 +1092,26 @@ const seedDatabase = async () => {
 
         // Create users (passwords will be hashed by User model's pre-save hook)
         const superAdmin = await User.create({
-            name: 'GenZmart Super Admin',
+            name: 'ShopHub Super Admin',
             email: 'superadmin@genz-mart.in',
             password: 'Hemraj@2002#',
             role: 'superadmin'
         });
 
         const mainAdmin = await User.create({
-            name: 'GenZmart Admin',
+            name: 'ShopHub Admin',
             email: 'admin@genz-mart.in',
             password: 'Hemraj@2002#',
             role: 'admin'
         });
 
         const seller = await User.create({
-            name: 'GenZmart Seller',
+            name: 'ShopHub Seller',
             email: 'seller@genz-mart.in',
             password: 'Hemraj@2002#',
             role: 'seller',
             sellerInfo: {
-                businessName: 'GenZmart Store',
+                businessName: 'ShopHub Store',
                 businessAddress: 'Kathmandu, Nepal',
                 approved: true,
                 approvedBy: superAdmin._id,

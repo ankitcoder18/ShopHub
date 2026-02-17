@@ -46,7 +46,7 @@ try {
             definition: {
                 openapi: '3.0.0',
                 info: {
-                    title: 'GenZmart E-Commerce API',
+                    title: 'ShopHub E-Commerce API',
                     version: '1.0.0',
                     description: 'Auto-generated docs from route annotations'
                 },
@@ -73,11 +73,11 @@ try {
 app.use('/', swaggerUi.serve);
 app.get('/', swaggerUi.setup(swaggerSpecs, {
     customCss: '.swagger-ui { background-color: #fafafa; }',
-    customSiteTitle: 'GenZmart API Documentation'
+    customSiteTitle: 'ShopHub API Documentation'
 }));
 app.get('/api-docs', swaggerUi.setup(swaggerSpecs, {
     customCss: '.swagger-ui { background-color: #fafafa; }',
-    customSiteTitle: 'GenZmart API Documentation'
+    customSiteTitle: 'ShopHub API Documentation'
 }));
 
 // Static files

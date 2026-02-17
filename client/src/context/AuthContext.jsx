@@ -55,7 +55,7 @@ export const AuthProvider = ({ children }) => {
                 const response = await fetch(
                     `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`,
                     {
-                        headers: { 'User-Agent': 'GenZmart-Ecommerce' },
+                        headers: { 'User-Agent': 'ShopHub-Ecommerce' },
                         signal: AbortSignal.timeout(5000)
                     }
                 );

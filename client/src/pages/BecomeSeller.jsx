@@ -87,7 +87,7 @@ const BecomeSeller = () => {
         <div className="container become-seller-page">
             <div className="seller-header">
                 <h1>Become a Seller</h1>
-                <p>Start selling your products on GenZmart</p>
+                <p>Start selling your products on ShopHub</p>
             </div>
 
             {message.text && (

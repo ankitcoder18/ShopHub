@@ -7,7 +7,7 @@ const Footer = () => {
         <footer className="footer">
             <div className="footer-content container">
                 <div className="footer-section">
-                    <img src="/images/genzmart-logo.png" alt="GenZmart" className="footer-logo" />
+                    <img src="/images/genzmart-logo.png" alt="ShopHub" className="footer-logo" />
                     <p className="footer-text">
                         Your one-stop destination for all your shopping needs. Quality products, great prices, and excellent service.
                     </p>
@@ -58,7 +58,7 @@ const Footer = () => {
 
             <div className="footer-bottom">
                 <div className="container">
-                    <p>&copy; {new Date().getFullYear()} GenZmart. All rights reserved. | Created by <a href="https://thapahemraj.com.np" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none', color: 'inherit'}}><strong>thapahemraj</strong></a></p>
+                    <p>&copy; {new Date().getFullYear()} ShopHub. All rights reserved. | Created by <a href="https://thapahemraj.com.np" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}><strong>thapahemraj</strong></a></p>
                     <div className="footer-bottom-links">
                         <a href="#">Privacy Policy</a>
                         <a href="#">Terms of Service</a>

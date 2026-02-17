@@ -2,11 +2,11 @@
 const swaggerSpec = {
     openapi: '3.0.0',
     info: {
-        title: 'GenZmart E-Commerce API',
+        title: 'ShopHub E-Commerce API',
         version: '1.0.0',
-        description: 'Complete API documentation for GenZmart e-commerce platform',
+        description: 'Complete API documentation for ShopHub e-commerce platform',
         contact: {
-            name: 'GenZmart Support',
+            name: 'ShopHub Support',
             email: 'support@genz-mart.in',
             url: 'https://genzmarts.vercel.app'
         },

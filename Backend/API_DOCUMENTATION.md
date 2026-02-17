@@ -1,4 +1,4 @@
-# GenZmart API Documentation
+# ShopHub API Documentation
 
 **Base URL:** `http://localhost:5000/api` (Development) or `https://apisgenzmart.vercel.app/api` (Production)
 

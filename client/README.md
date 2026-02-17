@@ -1,4 +1,4 @@
-# GenZmart E-commerce - Frontend
+# ShopHub E-commerce - Frontend
 
 Full-stack e-commerce platform built with React + Vite.
 

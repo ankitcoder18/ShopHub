@@ -47,7 +47,7 @@ const Login = () => {
             <div className="auth-image-section">
                 <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&h=800&fit=crop" alt="Shopping" className="auth-image" />
                 <div className="auth-image-overlay">
-                    <h2>Welcome to GenZmart</h2>
+                    <h2>Welcome to ShopHub</h2>
                     <p>Your one-stop shopping destination</p>
                 </div>
             </div>

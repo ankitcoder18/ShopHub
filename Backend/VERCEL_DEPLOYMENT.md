@@ -11,7 +11,7 @@
 ### Option 1: Via Vercel Dashboard
 1. Go to https://vercel.com/dashboard
 2. Click "New Project"
-3. Import your GitHub repository `thapahemraj/GenZmart`
+3. Import your GitHub repository `thapahemraj/ShopHub`
 4. **Important Settings:**
    - **Root Directory**: `Backend`
    - **Framework Preset**: Other
@@ -24,7 +24,7 @@
    JWT_SECRET=your_jwt_secret_key_here_change_in_production
    GOOGLE_CLIENT_ID=433287518957-dc98n5mp71lrs124h0ivlll5deeukp5b.apps.googleusercontent.com
    GOOGLE_CLIENT_SECRET=demo 
-   FRONTEND_URL=https://genzmart.vercel.app
+   FRONTEND_URL=https://shophub.vercel.app
    NODE_ENV=production
    ```
 
@@ -32,20 +32,20 @@
 
 ### Option 2: Via Vercel CLI
 ```bash
-cd /workspaces/GenZmart/Backend
+cd /workspaces/ShopHub/Backend
 vercel --prod
 ```
 
 ## 🔍 Testing After Deployment
 
-Once deployed (e.g., `https://genzmart-backend.vercel.app`):
+Once deployed (e.g., `https://shophub-backend.vercel.app`):
 
 ```bash
 # Test health
 curl https://your-backend-url.vercel.app/api/products
 
 # Test with origin
-curl -H "Origin: https://genzmart.vercel.app" \
+curl -H "Origin: https://shophub.vercel.app" \
      https://your-backend-url.vercel.app/api/products
 ```
 
@@ -58,7 +58,7 @@ VITE_API_URL=https://your-backend-url.vercel.app/api
 
 ## ⚠️ Important Notes
 - MongoDB IP whitelist must include `0.0.0.0/0` (allow all IPs)
-- CORS is configured for `https://genzmart.vercel.app`
+- CORS is configured for `https://shophub.vercel.app`
 - All environment variables must be set in Vercel dashboard
 - The backend will run as serverless functions
 

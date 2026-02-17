@@ -72,7 +72,7 @@ const Navbar = () => {
             <div className="navbar-container container">
                 {/* Logo */}
                 <Link to="/" className="navbar-logo">
-                    <img src="/images/genzmart-logo.png" alt="GenZmart" className="logo-image" />
+                    <img src="/images/genzmart-logo.png" alt="ShopHub" className="logo-image" />
                 </Link>
 
                 {/* Search Bar */}

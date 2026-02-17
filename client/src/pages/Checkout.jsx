@@ -125,7 +125,7 @@ const Checkout = () => {
                 key: data.keyId,
                 amount: data.order.amount,
                 currency: data.order.currency,
-                name: 'GenZmart',
+                name: 'ShopHub',
                 description: 'Order Payment',
                 order_id: data.order.id,
                 handler: async function (response) {

@@ -6,14 +6,14 @@ module.exports = (req, res) => {
     const protocol = req.headers['x-forwarded-proto'] || 'https';
     const host = req.headers['x-forwarded-host'] || req.headers.host;
     const baseUrl = `${protocol}://${host}`;
-    
+
     // If requesting JSON spec
     if (req.url === '/api-docs/swagger.json' || req.query.format === 'json') {
         res.setHeader('Content-Type', 'application/json');
         res.setHeader('Access-Control-Allow-Origin', '*');
         return res.send(JSON.stringify(swaggerSpecs, null, 2));
     }
-    
+
     // Serve Swagger UI HTML using CDN
     const html = `
 <!DOCTYPE html>
@@ -21,7 +21,7 @@ module.exports = (req, res) => {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GenZmart API Documentation</title>
+    <title>ShopHub API Documentation</title>
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/swagger-ui-dist@5.10.5/swagger-ui.css">
     <style>
         body { margin: 0; padding: 0; }
@@ -54,7 +54,7 @@ module.exports = (req, res) => {
     </script>
 </body>
 </html>`;
-    
+
     res.setHeader('Content-Type', 'text/html');
     res.send(html);
 };
