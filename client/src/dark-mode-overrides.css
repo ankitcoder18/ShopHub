@@ -1,0 +1,316 @@
+/* Global Dark Mode Overrides for all pages and components */
+
+/* Home Page */
+:root[data-theme="dark"] .hero-section {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+}
+
+:root[data-theme="dark"] .hero-content h1,
+:root[data-theme="dark"] .hero-content p {
+    color: var(--text-white);
+}
+
+:root[data-theme="dark"] .banner {
+    background: var(--bg-primary);
+}
+
+:root[data-theme="dark"] .banner-content h2,
+:root[data-theme="dark"] .banner-content p {
+    color: var(--text-primary);
+}
+
+/* Products Page */
+:root[data-theme="dark"] .products-container {
+    background: var(--bg-secondary);
+}
+
+:root[data-theme="dark"] .products-header h1 {
+    color: var(--text-primary);
+}
+
+:root[data-theme="dark"] .filter-sidebar {
+    background: var(--bg-primary);
+    border-right: 1px solid var(--border-color);
+}
+
+:root[data-theme="dark"] .filter-group-title {
+    color: var(--text-primary);
+}
+
+:root[data-theme="dark"] .filter-label {
+    color: var(--text-secondary);
+}
+
+/* Cart Page */
+:root[data-theme="dark"] .cart-container {
+    background: var(--bg-secondary);
+}
+
+:root[data-theme="dark"] .cart-item {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+}
+
+:root[data-theme="dark"] .cart-item-name {
+    color: var(--text-primary);
+}
+
+:root[data-theme="dark"] .cart-item-price {
+    color: var(--primary);
+}
+
+:root[data-theme="dark"] .order-summary {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+}
+
+:root[data-theme="dark"] .summary-row {
+    color: var(--text-secondary);
+}
+
+:root[data-theme="dark"] .summary-total {
+    color: var(--text-primary);
+}
+
+/* Orders Page */
+:root[data-theme="dark"] .orders-list {
+    background: var(--bg-secondary);
+}
+
+:root[data-theme="dark"] .order-card {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+}
+
+:root[data-theme="dark"] .order-number {
+    color: var(--text-primary);
+}
+
+:root[data-theme="dark"] .order-status {
+    color: var(--text-secondary);
+}
+
+/* Order Detail Page */
+:root[data-theme="dark"] .order-detail-container {
+    background: var(--bg-secondary);
+}
+
+:root[data-theme="dark"] .order-detail-card {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+}
+
+:root[data-theme="dark"] .order-detail-header h1 {
+    color: var(--text-primary);
+}
+
+/* Profile Page */
+:root[data-theme="dark"] .profile-container {
+    background: var(--bg-secondary);
+}
+
+:root[data-theme="dark"] .profile-card {
+    background: var(--bg-primary);
+}
+
+:root[data-theme="dark"] .profile-label {
+    color: var(--text-secondary);
+}
+
+:root[data-theme="dark"] .profile-value {
+    color: var(--text-primary);
+}
+
+/* Checkout Page */
+:root[data-theme="dark"] .checkout-container {
+    background: var(--bg-secondary);
+}
+
+:root[data-theme="dark"] .checkout-card {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+}
+
+:root[data-theme="dark"] .checkout-step-title {
+    color: var(--text-primary);
+}
+
+/* Admin Dashboard */
+:root[data-theme="dark"] .admin-dashboard {
+    background: var(--bg-secondary);
+}
+
+:root[data-theme="dark"] .admin-card {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+}
+
+:root[data-theme="dark"] .stats-card {
+    background: var(--bg-primary);
+}
+
+:root[data-theme="dark"] .stats-label {
+    color: var(--text-secondary);
+}
+
+:root[data-theme="dark"] .stats-value {
+    color: var(--text-primary);
+}
+
+/* Seller Dashboard */
+:root[data-theme="dark"] .seller-dashboard {
+    background: var(--bg-secondary);
+}
+
+:root[data-theme="dark"] .seller-card {
+    background: var(--bg-primary);
+}
+
+/* Product Detail Page */
+:root[data-theme="dark"] .product-detail-container {
+    background: var(--bg-secondary);
+}
+
+:root[data-theme="dark"] .product-detail-main {
+    background: var(--bg-primary);
+}
+
+:root[data-theme="dark"] .product-detail-title {
+    color: var(--text-primary);
+}
+
+:root[data-theme="dark"] .product-detail-price {
+    color: var(--primary);
+}
+
+:root[data-theme="dark"] .product-detail-description {
+    color: var(--text-secondary);
+}
+
+/* Wishlist Page */
+:root[data-theme="dark"] .wishlist-container {
+    background: var(--bg-secondary);
+}
+
+:root[data-theme="dark"] .wishlist-item {
+    background: var(--bg-primary);
+}
+
+/* Become Seller Page */
+:root[data-theme="dark"] .become-seller-container {
+    background: var(--bg-secondary);
+}
+
+:root[data-theme="dark"] .seller-form-card {
+    background: var(--bg-primary);
+}
+
+:root[data-theme="dark"] .form-section-title {
+    color: var(--text-primary);
+}
+
+/* Modal Overrides */
+:root[data-theme="dark"] .modal-overlay {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+:root[data-theme="dark"] .modal-content {
+    background: var(--bg-primary);
+}
+
+:root[data-theme="dark"] .modal-header {
+    border-bottom: 1px solid var(--border-color);
+}
+
+:root[data-theme="dark"] .modal-header h2 {
+    color: var(--text-primary);
+}
+
+:root[data-theme="dark"] .modal-body {
+    color: var(--text-secondary);
+}
+
+/* Table Overrides */
+:root[data-theme="dark"] table {
+    color: var(--text-primary);
+}
+
+:root[data-theme="dark"] th {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+    border-bottom: 1px solid var(--border-color);
+}
+
+:root[data-theme="dark"] td {
+    border-bottom: 1px solid var(--border-color);
+}
+
+:root[data-theme="dark"] tr:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* Toast Notifications */
+:root[data-theme="dark"] .toast {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+}
+
+/* Input Fields */
+:root[data-theme="dark"] .form-control {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+}
+
+:root[data-theme="dark"] .form-control::placeholder {
+    color: var(--text-tertiary);
+}
+
+:root[data-theme="dark"] select.form-control {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+}
+
+/* Badges */
+:root[data-theme="dark"] .badge {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+}
+
+/* Links */
+:root[data-theme="dark"] a {
+    color: var(--primary);
+}
+
+:root[data-theme="dark"] a:hover {
+    color: var(--primary-light);
+}
+
+/* Heading Colors */
+:root[data-theme="dark"] h1,
+:root[data-theme="dark"] h2,
+:root[data-theme="dark"] h3,
+:root[data-theme="dark"] h4,
+:root[data-theme="dark"] h5,
+:root[data-theme="dark"] h6 {
+    color: var(--text-primary);
+}
+
+/* Paragraph Text */
+:root[data-theme="dark"] p {
+    color: var(--text-secondary);
+}
+
+/* Helper Text */
+:root[data-theme="dark"] .text-muted,
+:root[data-theme="dark"] .text-secondary,
+:root[data-theme="dark"] .text-gray {
+    color: var(--text-tertiary);
+}
+
+/* Divider */
+:root[data-theme="dark"] hr {
+    border-color: var(--border-color);
+}

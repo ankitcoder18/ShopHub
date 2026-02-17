@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="GenZmart - Elevate Every Moment. Your premium e-commerce destination." />
+  <title>GenZmart - Elevate Every Moment</title>
+  
+  <!-- Prevent white flash on dark mode during page load -->
+  <script>
+    (function() {
+      function getInitialTheme() {
+        const stored = localStorage.getItem('theme');
+        if (stored === 'light' || stored === 'dark') return stored;
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        return prefersDark ? 'dark' : 'light';
+      }
+      const theme = getInitialTheme();
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+  
+  <style>
+    /* Prevent white flash before React loads */
+    :root {
+      --bg-light: #ffffff;
+      --bg-dark: #0b1220;
+    }
+    
+    html {
+      background-color: var(--bg-light);
+    }
+    
+    html[data-theme="dark"] {
+      background-color: var(--bg-dark);
+    }
+    
+    body {
+      margin: 0;
+      background-color: transparent;
+    }
+    
+    #root {
+      min-height: 100vh;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
