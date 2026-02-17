@@ -8,7 +8,7 @@ const swaggerSpec = {
         contact: {
             name: 'ShopHub Support',
             email: 'support@shophub.in',
-            url: 'https://shophub.vercel.app'
+            url: 'https://shophubs.vercel.app'
         },
         license: {
             name: 'ISC'
@@ -20,7 +20,7 @@ const swaggerSpec = {
             description: 'Development Server'
         },
         {
-            url: 'https://apisshophub.vercel.app/api',
+            url: 'https://apishophub.vercel.app/api',
             description: 'Production Server'
         }
     ],

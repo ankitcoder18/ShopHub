@@ -69,16 +69,16 @@ try {
     console.warn('Swagger auto-generation failed, using manual spec. Reason:', e?.message);
 }
 
-// Serve Swagger UI at root and at /api-docs
-app.use('/', swaggerUi.serve);
-app.get('/', swaggerUi.setup(swaggerSpecs, {
+// Serve Swagger UI at /api-docs
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpecs, {
     customCss: '.swagger-ui { background-color: #fafafa; }',
     customSiteTitle: 'ShopHub API Documentation'
 }));
-app.get('/api-docs', swaggerUi.setup(swaggerSpecs, {
-    customCss: '.swagger-ui { background-color: #fafafa; }',
-    customSiteTitle: 'ShopHub API Documentation'
-}));
+
+// Root route - Simple status check
+app.get('/', (req, res) => {
+    res.send('ShopHub API is running. Documentation available at /api-docs');
+});
 
 // Static files
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
